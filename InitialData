@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS student;
+
+CREATE TABLE student(
+student_id INT PRIMARY KEY,
+student_name VARCHAR(100) NOT NULL,
+sex CHAR(2) NOT NULL,
+birth_date DATE NOT NULL,
+address VARCHAR(500) NOT NULL,
+major VARCHAR(50) NOT NULL
+) ENGINE=INNODB;
+
+insert INTO student(student_id,student_name,sex,birth_date,address,major) VALUES
+
+(00001,'Agatha Bobby','L','2005-03-01','312, Blocked St','Science');
