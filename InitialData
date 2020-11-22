@@ -1,14 +1,36 @@
 DROP TABLE IF EXISTS student;
 
-CREATE TABLE student(
-student_id INT PRIMARY KEY,
-student_name VARCHAR(100) NOT NULL,
-sex CHAR(2) NOT NULL,
-birth_date DATE NOT NULL,
-address VARCHAR(500) NOT NULL,
-major VARCHAR(50) NOT NULL
-) ENGINE=INNODB;
-
-insert INTO student(student_id,student_name,sex,birth_date,address,major) VALUES
-
-(00001,'Agatha Bobby','L','2005-03-01','312, Blocked St','Science');
+CREATE TABLE IF NOT EXISTS student (
+    `student_id` INT PRIMARY KEY,
+    `student_name` VARCHAR(14) CHARACTER SET NOT NULL,
+    `sex` VARCHAR(1) CHARACTER SET NOT NULL,
+    `birth_date` DATETIME NOT NULL,
+    `address` VARCHAR(30) CHARACTER SET NOT NULL,
+    `major` VARCHAR(7) CHARACTER SET NOT NULL
+);
+INSERT INTO student VALUES
+    (00001,'Agatha Lee','F','2002-03-30 00:00:00','Jalan Mawar no 10','Science'),
+    (00002,'Logan Paul','M','2002-01-01 00:00:00','Jalan Sejahtera no 1','Social'),
+    (00003,'Edward Bun','M','2002-04-12 00:00:00','Jalan RA Kartini no 26','Social'),
+    (00004,'Jasleen Scott','F','2002-10-02 00:00:00','Jalan Bunga Putih no 12','Science'),
+    (00005,'Lyle Cross','F','2002-10-17 00:00:00','Jalan Monginsidi no 6','Social'),
+    (00006,'Bob Male','M','2003-02-28 00:00:00','Jalan Anggrek no 092','Science'),
+    (00007,'Johan Elbert','M','2003-05-21 00:00:00','Jalan Dewata no 421','Science'),
+    (00008,'King Midas','M','2004-07-07 00:00:00','Jalan Pasirian no 33','Social'),
+    (00009,'John','M','2003-11-30 00:00:00','Jalan Pasir Hitam no 93','Science'),
+    (00010,'Euan Mcintyre','M','2003-01-26 00:00:00','Jalan Kalpataru no 50','Social'),
+    (00011,'Morgan Dunn','M','2004-11-18 00:00:00','Jalan Ikan Paus no 13','Social'),
+    (00012,'Calvin Stevens','M','2004-12-27 00:00:00','Jalan Ikan Piranha no 101','Science'),
+    (00013,'Josie Harris','F','2005-01-13 00:00:00','Jalan Ikan Hiu no 44','Social'),
+    (00014,'Jay Harper','F','2005-05-31 00:00:00','Jalan Ikan Piranha no 11','Social'),
+    (00015,'Connie Hill','F','2005-12-08 00:00:00','Jalan Ikan Paus no 12','Social'),
+    (00016,'Maria Vania','F','2004-10-18 00:00:00','Jalan Bebas no 100','Science'),
+    (00017,'Kaleb Bary','M','2005-04-09 00:00:00','Jalan Bebas no 100','Social'),
+    (00018,'Ryan Simon','M','2005-08-11 00:00:00','Jalan Bebas no 100','Science'),
+    (00019,'Sophie Brown','F','2004-03-22 00:00:00','Jalan Puri Indah no 21','Science'),
+    (00020,'Stella Brown','F','2004-03-22 00:00:00','Jalan Puri Indah no 21','Science'),
+    (00021,'Nevaeh Higgs','M','2003-07-31 00:00:00','Jalan Candi Jago no 2','Social'),
+    (00022,'Skye Nieves','F','2005-06-23 00:00:00','Jalan Dipenogoro no 450','Social'),
+    (00023,'Samirah Vaughn','F','2005-07-09 00:00:00','Jalan Terusan Dipenogoro no 31','Science'),
+    (00024,'Tayla Bull','F','2005-11-24 00:00:00','Jalan Taman Kyoto no 42A','Social'),
+    (00025,'Affan Atkinson','M','2005-12-04 00:00:00','Jalan Permata no 5','Social');
