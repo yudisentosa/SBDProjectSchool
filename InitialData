@@ -312,60 +312,60 @@ INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,pa
 
 DROP TABLE IF EXISTS class_student;
 CREATE TABLE class_student(
-   class_id      VARCHAR(6) NOT NULL
-  ,student_id    CHAR(5)  NOT NULL
-  ,academic_year VARCHAR(9) NOT NULL
-  ,INDEX(student_id,academic_year),
+   class_id      VARCHAR(6) NOT NULL PRIMARY KEY
+  ,student_id    CHAR(5) NOT NULL
+  ,academic_year VARCHAR(9) NOT NULL,
+INDEX(student_id,academic_year),
 FOREIGN KEY (class_id) 
         REFERENCES class(class_id),
 FOREIGN KEY (student_id) 
         REFERENCES student(student_id)
 );
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00001,'2018/2019');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00002,'2018/2019');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00003,'2018/2019');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00004,'2018/2019');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00005,'2018/2019');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00006,'2019/2020');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00007,'2019/2020');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00008,'2019/2020');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00009,'2019/2020');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00010,'2019/2020');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00011,'2019/2020');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00012,'2019/2020');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00013,'2019/2020');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00014,'2019/2020');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00015,'2019/2020');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1',00001,'2019/2020');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00002,'2019/2020');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00003,'2019/2020');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1',00004,'2019/2020');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00005,'2019/2020');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00016,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00017,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00018,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00019,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00020,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00021,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00022,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00023,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00024,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00025,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1',00006,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1',00007,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00008,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1',00009,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00010,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00011,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1',00012,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00013,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00014,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00015,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('12IPA1',00001,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('12IPS1',00002,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('12IPS1',00003,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('12IPA1',00004,'2020/2021');
-INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('12IPS1',00005,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1','00001','2018/2019');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1','00002','2018/2019');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1','00003','2018/2019');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1','00004','2018/2019');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1','00005','2018/2019');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1','00006','2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1','00007','2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1','00008','2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1','00009','2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1','00010','2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1','00011','2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1','00012','2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1','00013','2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1','00014','2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1','00015','2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1','00001','2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1','00002','2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1','00003','2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1','00004','2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1','00005','2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1','00016','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1','00017','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1','00018','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1','00019','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1','00020','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1','00021','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1','00022','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1','00023','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1','00024','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1','00025','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1','00006','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1','00007','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1','00008','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1','00009','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1','00010','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1','00011','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1','00012','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1','00013','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1','00014','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1','00015','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('12IPA1','00001','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('12IPS1','00002','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('12IPS1','00003','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('12IPA1','00004','2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('12IPS1','00005','2020/2021');
 
 DROP TABLE IF EXISTS extracurricular;
 CREATE TABLE extracurricular(
