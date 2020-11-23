@@ -312,7 +312,7 @@ INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,pa
 
 DROP TABLE IF EXISTS class_student;
 CREATE TABLE class_student(
-   class_id      VARCHAR(6) NOT NULL PRIMARY KEY
+   class_id      VARCHAR(6) NOT NULL
   ,student_id    CHAR(5) NOT NULL
   ,academic_year VARCHAR(9) NOT NULL,
 INDEX(student_id,academic_year),
