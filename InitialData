@@ -217,3 +217,163 @@ INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VA
 INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PKN12S012021','12IPS1','2020/2021','PKN12');
 INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('SEJ12S012021','12IPS1','2020/2021','SEJ12');
 
+DROP TABLE IF EXISTS tuition;
+CREATE TABLE tuition(
+tuition_id VARCHAR(8) NOT NULL PRIMARY KEY
+,grade INTEGER NOT NULL
+);
+INSERT INTO tuition(tuition_id,grade) VALUES ('10BEA100',10);
+INSERT INTO tuition(tuition_id,grade) VALUES ('10BEA50',10);
+INSERT INTO tuition(tuition_id,grade) VALUES ('10GR1',10);
+INSERT INTO tuition(tuition_id,grade) VALUES ('10GR2',10);
+INSERT INTO tuition(tuition_id,grade) VALUES ('10GR3',10);
+INSERT INTO tuition(tuition_id,grade) VALUES ('11BEA100',11);
+INSERT INTO tuition(tuition_id,grade) VALUES ('11BEA50',11);
+INSERT INTO tuition(tuition_id,grade) VALUES ('11GR1',11);
+INSERT INTO tuition(tuition_id,grade) VALUES ('11GR2',11);
+INSERT INTO tuition(tuition_id,grade) VALUES ('11GR3',11);
+INSERT INTO tuition(tuition_id,grade) VALUES ('12BEA100',12);
+INSERT INTO tuition(tuition_id,grade) VALUES ('12BEA50',12);
+INSERT INTO tuition(tuition_id,grade) VALUES ('12GR1',12);
+INSERT INTO tuition(tuition_id,grade) VALUES ('12GR2',12);
+INSERT INTO tuition(tuition_id,grade) VALUES ('12GR3',12);
+
+DROP TABLE IF EXISTS parent;
+CREATE TABLE parent(
+student_id CHAR(5) NOT NULL PRIMARY KEY
+,parent_name VARCHAR(8) NOT NULL
+,sex CHAR(1) NOT NULL
+,birthdate DATE NOT NULL
+,relationship VARCHAR(12) NOT NULL,
+FOREIGN KEY (student_id)
+REFERENCES student(student_id)
+);
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00001','Nurul','F','1981-10-15','Ibu kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00002','Surya','M','1987-05-27','Ayah kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00003','Ali','M','1965-11-13','Ayah kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00004','Daud','M','1965-11-13','Ayah Kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00005','Sri','F','1982-10-14','Ibu kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00006','Aditya','M','1965-11-13','Ayah Kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00007','Amir','M','1972-06-14','Ayah Kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00008','Raja','M','1978-09-02','Ayah Kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00009','Abdul','M','1977-04-28','Ayah Kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00010','Ibrahim','M','1979-04-22','Ayah Kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00011','Arif','M','1979-04-22','Ayah Kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00012','Iman','M','1981-08-13','Ayah Kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00013','Hasan','M','1966-10-17','Ayah Kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00014','Muhammad','M','1976-05-25','Ayah Kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00015','Muhamad','M','1974-01-16','Ayah Kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00016','Mansur','M','1969-09-01','Ayah Angkat');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00017','Mansur','M','1973-04-04','Ayah Angkat');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00018','Mansur','M','1984-05-27','Ayah Angkat');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00019','Nur','F','1983-06-23','Ibu kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00020','Nur','F','1979-03-09','Ibu kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00021','Budi','M','1980-04-28','Ayah Kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00022','Ani','F','1983-06-04','Ibu kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00023','Titik','F','1983-09-12','Ibu kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00024','Komang','M','1977-08-01','Ayah Kandung');
+INSERT INTO parent(student_id,parent_name,sex,birthdate,relationship) VALUES ('00025','Malih','M','1979-08-24','Ayah Kandung');
+
+DROP TABLE IF EXISTS student_tuition;
+CREATE TABLE student_tuition(
+transaction_id VARCHAR(11) NOT NULL PRIMARY KEY
+,student_id CHAR(5) NOT NULL
+,tuition_id VARCHAR(8) NOT NULL
+,payment_date DATE
+,payment_status VARCHAR(6) NOT NULL,
+FOREIGN KEY (student_id) REFERENCES student(student_id),
+FOREIGN KEY (tuition_id) REFERENCES tuition(tuition_id)
+);
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('12SEM120001','00001','12GR3',NULL,'UNPAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('11SEM120002','00002','11BEA50','2020-08-20','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('10SEM120003','00003','10GR1','2020-08-07','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('10SEM120004','00004','10GR1','2020-08-21','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('12SEM120005','00005','12GR2','2020-09-03','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('10SEM120006','00006','10GR2','2020-09-09','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('11SEM120007','00007','11BEA100','2020-08-14','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('11SEM120008','00008','11GR3','2020-08-04','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('11SEM120009','00009','11GR1','2020-07-20','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('10SEM120010','00010','10BEA50','2020-08-29','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('10SEM120011','00011','10BEA100','2020-08-06','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('12SEM120012','00012','12BEA100','2020-08-08','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('12SEM120013','00013','12BEA50','2020-08-02','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('12SEM120014','00014','12GR3','2020-08-26','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('11SEM120015','00015','11GR3','2020-09-05','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('10SEM120016','00016','10GR3','2020-08-19','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('10SEM120017','00017','10GR1','2020-07-24','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('10SEM120018','00018','10BEA50','2020-09-12','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('10SEM120019','00019','10GR2','2020-08-05','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('10SEM120020','00020','10GR1','2020-07-17','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('11SEM120021','00021','11BEA50','2020-08-01','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('11SEM120022','00022','11GR1','2020-09-17','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('11SEM120023','00023','11GR2','2020-08-17','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('11SEM120024','00024','11GR2','2020-08-12','PAID');
+INSERT INTO student_tuition(transaction_id,student_id,tuition_id,payment_date,payment_status) VALUES ('11SEM120025','00025','11GR2','2020-09-02','PAID');
+
+DROP TABLE IF EXISTS class_student;
+CREATE TABLE class_student(
+   class_id      VARCHAR(6) NOT NULL
+  ,student_id    CHAR(5)  NOT NULL
+  ,academic_year VARCHAR(9) NOT NULL
+  ,INDEX(student_id,academic_year),
+FOREIGN KEY (class_id) 
+        REFERENCES class(class_id),
+FOREIGN KEY (student_id) 
+        REFERENCES student(student_id)
+);
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00001,'2018/2019');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00002,'2018/2019');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00003,'2018/2019');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00004,'2018/2019');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00005,'2018/2019');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00006,'2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00007,'2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00008,'2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00009,'2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00010,'2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00011,'2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00012,'2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00013,'2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00014,'2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00015,'2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1',00001,'2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00002,'2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00003,'2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1',00004,'2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00005,'2019/2020');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00016,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00017,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00018,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00019,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00020,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00021,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00022,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPA1',00023,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00024,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('10IPS1',00025,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1',00006,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1',00007,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00008,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1',00009,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00010,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00011,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPA1',00012,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00013,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00014,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('11IPS1',00015,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('12IPA1',00001,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('12IPS1',00002,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('12IPS1',00003,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('12IPA1',00004,'2020/2021');
+INSERT INTO class_student(class_id,student_id,academic_year) VALUES ('12IPS1',00005,'2020/2021');
+
+DROP TABLE IF EXISTS extracurricular;
+CREATE TABLE extracurricular(
+extracurricular_id VARCHAR(6) NOT NULL PRIMARY KEY
+,extracurricular_name VARCHAR(12) NOT NULL
+);
+INSERT INTO extracurricular(extracurricular_id,extracurricular_name) VALUES ('EXC001','Basketball');
+INSERT INTO extracurricular(extracurricular_id,extracurricular_name) VALUES ('EXC002','Soccer');
+INSERT INTO extracurricular(extracurricular_id,extracurricular_name) VALUES ('EXC003','Badminton');
+INSERT INTO extracurricular(extracurricular_id,extracurricular_name) VALUES ('EXC004','Science Club');
+INSERT INTO extracurricular(extracurricular_id,extracurricular_name) VALUES ('EXC005','Modern Dance');
