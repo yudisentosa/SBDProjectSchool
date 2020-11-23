@@ -1,36 +1,219 @@
 DROP TABLE IF EXISTS student;
-
-CREATE TABLE IF NOT EXISTS student (
-    `student_id` INT PRIMARY KEY,
-    `student_name` VARCHAR(14) CHARACTER SET NOT NULL,
-    `sex` VARCHAR(1) CHARACTER SET NOT NULL,
-    `birth_date` DATETIME NOT NULL,
-    `address` VARCHAR(30) CHARACTER SET NOT NULL,
-    `major` VARCHAR(7) CHARACTER SET NOT NULL
+CREATE TABLE student(
+student_id CHAR(5) NOT NULL PRIMARY KEY
+,student_name VARCHAR(14) NOT NULL
+,sex VARCHAR(1) NOT NULL
+,birth_date DATE NOT NULL
+,address VARCHAR(30) NOT NULL
+,major VARCHAR(7) NOT NULL
 );
-INSERT INTO student VALUES
-    (00001,'Agatha Lee','F','2002-03-30 00:00:00','Jalan Mawar no 10','Science'),
-    (00002,'Logan Paul','M','2002-01-01 00:00:00','Jalan Sejahtera no 1','Social'),
-    (00003,'Edward Bun','M','2002-04-12 00:00:00','Jalan RA Kartini no 26','Social'),
-    (00004,'Jasleen Scott','F','2002-10-02 00:00:00','Jalan Bunga Putih no 12','Science'),
-    (00005,'Lyle Cross','F','2002-10-17 00:00:00','Jalan Monginsidi no 6','Social'),
-    (00006,'Bob Male','M','2003-02-28 00:00:00','Jalan Anggrek no 092','Science'),
-    (00007,'Johan Elbert','M','2003-05-21 00:00:00','Jalan Dewata no 421','Science'),
-    (00008,'King Midas','M','2004-07-07 00:00:00','Jalan Pasirian no 33','Social'),
-    (00009,'John','M','2003-11-30 00:00:00','Jalan Pasir Hitam no 93','Science'),
-    (00010,'Euan Mcintyre','M','2003-01-26 00:00:00','Jalan Kalpataru no 50','Social'),
-    (00011,'Morgan Dunn','M','2004-11-18 00:00:00','Jalan Ikan Paus no 13','Social'),
-    (00012,'Calvin Stevens','M','2004-12-27 00:00:00','Jalan Ikan Piranha no 101','Science'),
-    (00013,'Josie Harris','F','2005-01-13 00:00:00','Jalan Ikan Hiu no 44','Social'),
-    (00014,'Jay Harper','F','2005-05-31 00:00:00','Jalan Ikan Piranha no 11','Social'),
-    (00015,'Connie Hill','F','2005-12-08 00:00:00','Jalan Ikan Paus no 12','Social'),
-    (00016,'Maria Vania','F','2004-10-18 00:00:00','Jalan Bebas no 100','Science'),
-    (00017,'Kaleb Bary','M','2005-04-09 00:00:00','Jalan Bebas no 100','Social'),
-    (00018,'Ryan Simon','M','2005-08-11 00:00:00','Jalan Bebas no 100','Science'),
-    (00019,'Sophie Brown','F','2004-03-22 00:00:00','Jalan Puri Indah no 21','Science'),
-    (00020,'Stella Brown','F','2004-03-22 00:00:00','Jalan Puri Indah no 21','Science'),
-    (00021,'Nevaeh Higgs','M','2003-07-31 00:00:00','Jalan Candi Jago no 2','Social'),
-    (00022,'Skye Nieves','F','2005-06-23 00:00:00','Jalan Dipenogoro no 450','Social'),
-    (00023,'Samirah Vaughn','F','2005-07-09 00:00:00','Jalan Terusan Dipenogoro no 31','Science'),
-    (00024,'Tayla Bull','F','2005-11-24 00:00:00','Jalan Taman Kyoto no 42A','Social'),
-    (00025,'Affan Atkinson','M','2005-12-04 00:00:00','Jalan Permata no 5','Social');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00001','Agatha Lee','F','2002-03-30','Jalan Mawar no 10','Science');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00002','Logan Paul','M','2002-01-01','Jalan Sejahtera no 1','Social');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00003','Edward Bun','M','2002-04-12','Jalan RA Kartini no 26','Social');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00004','Jasleen Scott','F','2002-10-02','Jalan Bunga Putih no 12','Science');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00005','Lyle Cross','F','2002-10-17','Jalan Monginsidi no 6','Social');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00006','Bob Male','M','2003-02-28','Jalan Anggrek no 092','Science');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00007','Johan Elbert','M','2003-05-21','Jalan Dewata no 421','Science');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00008','King Midas','M','2004-07-07','Jalan Pasirian no 33','Social');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00009','John','M','2003-11-30','Jalan Pasir Hitam no 93','Science');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00010','Euan Mcintyre','M','2003-01-26','Jalan Kalpataru no 50','Social');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00011','Morgan Dunn','M','2004-11-18','Jalan Ikan Paus no 13','Social');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00012','Calvin Stevens','M','2004-12-27','Jalan Ikan Piranha no 101','Science');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00013','Josie Harris','F','2005-01-13','Jalan Ikan Hiu no 44','Social');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00014','Jay Harper','F','2005-05-31','Jalan Ikan Piranha no 11','Social');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00015','Connie Hill','F','2005-12-08','Jalan Ikan Paus no 12','Social');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00016','Maria Vania','F','2004-10-18','Jalan Bebas no 100','Science');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00017','Kaleb Bary','M','2005-04-09','Jalan Bebas no 100','Social');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00018','Ryan Simon','M','2005-08-11','Jalan Bebas no 100','Science');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00019','Sophie Brown','F','2004-03-22','Jalan Puri Indah no 21','Science');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00020','Stella Brown','F','2004-03-22','Jalan Puri Indah no 21','Science');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00021','Nevaeh Higgs','M','2003-07-31','Jalan Candi Jago no 2','Social');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00022','Skye Nieves','F','2005-06-23','Jalan Dipenogoro no 450','Social');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00023','Samirah Vaughn','F','2005-07-09','Jalan Terusan Dipenogoro no 31','Science');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00024','Tayla Bull','F','2005-11-24','Jalan Taman Kyoto no 42A','Social');
+INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00025','Affan Atkinson','M','2005-12-04','Jalan Permata no 5','Social');
+
+DROP TABLE IF EXISTS class;
+
+CREATE TABLE class(
+class_id VARCHAR(7) NOT NULL PRIMARY KEY,
+class_name VARCHAR(12) NOT NULL,
+grade INTEGER NOT NULL
+);
+INSERT INTO class(class_id,class_name,grade) VALUES ('10IPA1','Kelas 10 IPA',10);
+INSERT INTO class(class_id,class_name,grade) VALUES ('10IPS1','Kelas 10 IPS',10);
+INSERT INTO class(class_id,class_name,grade) VALUES ('11IPA1','Kelas 11 IPA',11);
+INSERT INTO class(class_id,class_name,grade) VALUES ('11IPS1','Kelas 11 IPS',11);
+INSERT INTO class(class_id,class_name,grade) VALUES ('12IPA1','Kelas 12 IPA',12);
+INSERT INTO class(class_id,class_name,grade) VALUES ('12IPS1','Kelas 12 IPS',12);
+
+DROP TABLE IF EXISTS subject_master;
+CREATE TABLE subject_master(
+subject_id CHAR(6) NOT NULL PRIMARY KEY
+,subject_name VARCHAR(35) NOT NULL
+,grade INTEGER NOT NULL
+,passing_score INTEGER NOT NULL
+);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('BIN10','Bahasa Indonesia Kelas 10',10,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('BIG10','Bahasa Inggris Kelas 10',10,70);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('MAN10','Bahasa Mandarin Kelas 10',10,65);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('PKN10','Pendidikan Kewarganegaraan Kelas 10',10,80);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('PAK10','Pendidikan Agama Kelas 10',10,80);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('OLG10','Olahraga Kelas 10',10,65);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('MDS10','Musik dan Seni Kelas 10',10,65);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('MTK10','Matematika Kelas 10',10,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('BIO10','Biologi Kelas 10',10,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('KIM10','Kimia Kelas 10',10,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('FIS10','Fisika Kelas 10',10,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('EKO10','Ekonomi Kelas 10',10,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('SEJ10','Sejarah Kelas 10',10,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('GEO10','Geografi Kelas 10',10,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('BIN11','Bahasa Indonesia Kelas 11',11,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('BIG11','Bahasa Inggris Kelas 11',11,70);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('MAN11','Bahasa Mandarin Kelas 11',11,65);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('PKN11','Pendidikan Kewarganegaraan Kelas 11',11,80);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('PAK11','Pendidikan Agama Kelas 11',11,80);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('OLG11','Olahraga Kelas 11',11,65);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('MDS11','Musik dan Seni Kelas 11',11,65);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('MTK11','Matematika Kelas 11',11,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('BIO11','Biologi Kelas 11',11,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('KIM11','Kimia Kelas 11',11,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('FIS11','Fisika Kelas 11',11,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('EKO11','Ekonomi Kelas 11',11,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('SEJ11','Sejarah Kelas 11',11,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('GEO11','Geografi Kelas 11',11,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('BIN12','Bahasa Indonesia Kelas 12',12,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('BIG12','Bahasa Inggris Kelas 12',12,70);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('MAN12','Bahasa Mandarin Kelas 12',12,65);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('PKN12','Pendidikan Kewarganegaraan Kelas 12',12,80);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('PAK12','Pendidikan Agama Kelas 12',12,80);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('OLG12','Olahraga Kelas 12',12,65);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('MDS12','Musik dan Seni Kelas 12',12,65);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('MTK12','Matematika Kelas 12',12,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('BIO12','Biologi Kelas 12',12,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('KIM12','Kimia Kelas 12',12,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('FIS12','Fisika Kelas 12',12,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('EKO12','Ekonomi Kelas 12',12,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('SEJ12','Sejarah Kelas 12',12,75);
+INSERT INTO subject_master(subject_id,subject_name,grade,passing_score) VALUES ('GEO12','Geografi Kelas 12',12,75);
+
+DROP TABLE IF EXISTS subject_class;
+CREATE TABLE subject_class(
+   subject_class_id VARCHAR(12) NOT NULL PRIMARY KEY
+  ,class_id         VARCHAR(6) NOT NULL
+  ,academic_year    VARCHAR(9) NOT NULL
+  ,subject_id       VARCHAR(5) NOT NULL,
+FOREIGN KEY(class_id) REFERENCES class(class_id),
+FOREIGN KEY(subject_id) REFERENCES subject_master(subject_id)
+);
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIG10A011920','10IPA1','2019/2020','BIG10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIN10A011920','10IPA1','2019/2020','BIN10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIO10A011920','10IPA1','2019/2020','BIO10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('FIS10A011920','10IPA1','2019/2020','FIS10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('KIM10A011920','10IPA1','2019/2020','KIM10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MAN10A011920','10IPA1','2019/2020','MAN10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MDS10A011920','10IPA1','2019/2020','MDS10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MTK10A011920','10IPA1','2019/2020','MTK10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('OLG10A011920','10IPA1','2019/2020','OLG10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PAK10A011920','10IPA1','2019/2020','PAK10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PKN10A011920','10IPA1','2019/2020','PKN10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIG10A012021','10IPA1','2020/2021','BIG10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIN10A012021','10IPA1','2020/2021','BIN10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIO10A012021','10IPA1','2020/2021','BIO10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('FIS10A012021','10IPA1','2020/2021','FIS10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('KIM10A012021','10IPA1','2020/2021','KIM10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MAN10A012021','10IPA1','2020/2021','MAN10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MDS10A012021','10IPA1','2020/2021','MDS10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MTK10A012021','10IPA1','2020/2021','MTK10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('OLG10A012021','10IPA1','2020/2021','OLG10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PAK10A012021','10IPA1','2020/2021','PAK10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PKN10A012021','10IPA1','2020/2021','PKN10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIG10S011920','10IPS1','2019/2020','BIG10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIN10S011920','10IPS1','2019/2020','BIN10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('EKO10S011920','10IPS1','2019/2020','EKO10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('GEO10S011920','10IPS1','2019/2020','GEO10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MAN10S011920','10IPS1','2019/2020','MAN10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MDS10S011920','10IPS1','2019/2020','MDS10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MTK10S011920','10IPS1','2019/2020','MTK10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('OLG10S011920','10IPS1','2019/2020','OLG10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PAK10S011920','10IPS1','2019/2020','PAK10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PKN10S011920','10IPS1','2019/2020','PKN10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('SEJ10S011920','10IPS1','2019/2020','SEJ10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MTK10S012021','10IPS1','2020/2021','MTK10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIG10S012021','10IPS1','2020/2021','BIG10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIN10S012021','10IPS1','2020/2021','BIN10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('EKO10S012021','10IPS1','2020/2021','EKO10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('GEO10S012021','10IPS1','2020/2021','GEO10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MAN10S012021','10IPS1','2020/2021','MAN10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MDS10S012021','10IPS1','2020/2021','MDS10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('OLG10S012021','10IPS1','2020/2021','OLG10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PAK10S012021','10IPS1','2020/2021','PAK10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PKN10S012021','10IPS1','2020/2021','PKN10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('SEJ10S012021','10IPS1','2020/2021','SEJ10');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIG11A011920','11IPA1','2019/2020','BIG11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIN11A011920','11IPA1','2019/2020','BIN11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIO11A011920','11IPA1','2019/2020','BIO11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('FIS11A011920','11IPA1','2019/2020','FIS11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('KIM11A011920','11IPA1','2019/2020','KIM11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MAN11A011920','11IPA1','2019/2020','MAN11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MDS11A011920','11IPA1','2019/2020','MDS11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MTK11A011920','11IPA1','2019/2020','MTK11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('OLG11A011920','11IPA1','2019/2020','OLG11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PAK11A011920','11IPA1','2019/2020','PAK11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PKN11A011920','11IPA1','2019/2020','PKN11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIG11A012021','11IPA1','2020/2021','BIG11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIN11A012021','11IPA1','2020/2021','BIN11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIO11A012021','11IPA1','2020/2021','BIO11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('FIS11A012021','11IPA1','2020/2021','FIS11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('KIM11A012021','11IPA1','2020/2021','KIM11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MAN11A012021','11IPA1','2020/2021','MAN11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MDS11A012021','11IPA1','2020/2021','MDS11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MTK11A012021','11IPA1','2020/2021','MTK11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('OLG11A012021','11IPA1','2020/2021','OLG11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PAK11A012021','11IPA1','2020/2021','PAK11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PKN11A012021','11IPA1','2020/2021','PKN11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIG11S011920','11IPS1','2020/2021','BIG11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIN11S011920','11IPS1','2020/2021','BIN11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('EKO11S011920','11IPS1','2020/2021','EKO11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('GEO11S011920','11IPS1','2020/2021','GEO11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MAN11S011920','11IPS1','2020/2021','MAN11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MDS11S011920','11IPS1','2020/2021','MDS11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MTK11S011920','11IPS1','2020/2021','MTK11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('OLG11S011920','11IPS1','2020/2021','OLG11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PAK11S011920','11IPS1','2020/2021','PAK11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PKN11S011920','11IPS1','2020/2021','PKN11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('SEJ11S011920','11IPS1','2020/2021','SEJ11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MTK11S012021','11IPS1','2020/2021','MTK11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIG11S012021','11IPS1','2020/2021','BIG11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIN11S012021','11IPS1','2020/2021','BIN11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('EKO11S012021','11IPS1','2020/2021','EKO11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('GEO11S012021','11IPS1','2020/2021','GEO11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MAN11S012021','11IPS1','2020/2021','MAN11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MDS11S012021','11IPS1','2020/2021','MDS11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('OLG11S012021','11IPS1','2020/2021','OLG11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PAK11S012021','11IPS1','2020/2021','PAK11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PKN11S012021','11IPS1','2020/2021','PKN11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('SEJ11S012021','11IPS1','2020/2021','SEJ11');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIG12A012021','12IPA1','2020/2021','BIG12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIN12A012021','12IPA1','2020/2021','BIN12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIO12A012021','12IPA1','2020/2021','BIO12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('FIS12A012021','12IPA1','2020/2021','FIS12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('KIM12A012021','12IPA1','2020/2021','KIM12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MAN12A012021','12IPA1','2020/2021','MAN12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MDS12A012021','12IPA1','2020/2021','MDS12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MTK12A012021','12IPA1','2020/2021','MTK12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('OLG12A012021','12IPA1','2020/2021','OLG12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PAK12A012021','12IPA1','2020/2021','PAK12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PKN12A012021','12IPA1','2020/2021','PKN12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MTK12S012021','12IPS1','2020/2021','MTK12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIG12S012021','12IPS1','2020/2021','BIG12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('BIN12S012021','12IPS1','2020/2021','BIN12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('EKO12S012021','12IPS1','2020/2021','EKO12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('GEO12S012021','12IPS1','2020/2021','GEO12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MAN12S012021','12IPS1','2020/2021','MAN12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('MDS12S012021','12IPS1','2020/2021','MDS12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('OLG12S012021','12IPS1','2020/2021','OLG12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PAK12S012021','12IPS1','2020/2021','PAK12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('PKN12S012021','12IPS1','2020/2021','PKN12');
+INSERT INTO subject_class(subject_class_id,class_id,academic_year,subject_id) VALUES ('SEJ12S012021','12IPS1','2020/2021','SEJ12');
+
