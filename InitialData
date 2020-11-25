@@ -378,21 +378,6 @@ INSERT INTO extracurricular(extracurricular_id,extracurricular_name) VALUES ('EX
 INSERT INTO extracurricular(extracurricular_id,extracurricular_name) VALUES ('EXC004','Science Club');
 INSERT INTO extracurricular(extracurricular_id,extracurricular_name) VALUES ('EXC005','Modern Dance');
 
-CREATE TABLE facility(
-facility_id VARCHAR(6) NOT NULL PRIMARY KEY
-,facility_name VARCHAR(19) NOT NULL
-);
-INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC001','Basketball Court');
-INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC002','Soccer Field');
-INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC003','Badminton Court');
-INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC004','Science Club Room');
-INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC005','Modern Dance Studio');
-INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC006','Kelas 10 IPA');
-INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC007','Kelas 10 IPS');
-INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC008','Kelas 11 IPA');
-INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC009','Kelas 11 IPS');
-INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC010','Kelas 12 IPA');
-INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC011','Kelas 12 IPS');
 
 DROP TABLE IF EXISTS employee;
 CREATE TABLE employee(
