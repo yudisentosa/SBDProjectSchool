@@ -315,7 +315,7 @@ CREATE TABLE class_student(
    class_id      VARCHAR(6) NOT NULL
   ,student_id    CHAR(5) NOT NULL
   ,academic_year VARCHAR(9) NOT NULL,
-INDEX(student_id,academic_year),
+PRIMARY_KEY(student_id,academic_year),
 FOREIGN KEY (class_id) 
         REFERENCES class(class_id),
 FOREIGN KEY (student_id) 
@@ -377,3 +377,229 @@ INSERT INTO extracurricular(extracurricular_id,extracurricular_name) VALUES ('EX
 INSERT INTO extracurricular(extracurricular_id,extracurricular_name) VALUES ('EXC003','Badminton');
 INSERT INTO extracurricular(extracurricular_id,extracurricular_name) VALUES ('EXC004','Science Club');
 INSERT INTO extracurricular(extracurricular_id,extracurricular_name) VALUES ('EXC005','Modern Dance');
+
+CREATE TABLE facility(
+facility_id VARCHAR(6) NOT NULL PRIMARY KEY
+,facility_name VARCHAR(19) NOT NULL
+);
+INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC001','Basketball Court');
+INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC002','Soccer Field');
+INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC003','Badminton Court');
+INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC004','Science Club Room');
+INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC005','Modern Dance Studio');
+INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC006','Kelas 10 IPA');
+INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC007','Kelas 10 IPS');
+INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC008','Kelas 11 IPA');
+INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC009','Kelas 11 IPS');
+INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC010','Kelas 12 IPA');
+INSERT INTO mytable(facility_id,facility_name) VALUES ('FAC011','Kelas 12 IPS');
+
+DROP TABLE IF EXISTS employee;
+CREATE TABLE employee(
+employee_id VARCHAR(4) NOT NULL PRIMARY KEY
+,employeeFirstName VARCHAR(9) NOT NULL
+,employeeLastName VARCHAR(9) NOT NULL
+,start_date VARCHAR(10) NOT NULL
+,sex VARCHAR(1) NOT NULL
+,birth_date VARCHAR(10) NOT NULL
+,address VARCHAR(22) NOT NULL
+,employee_categ VARCHAR(13) NOT NULL
+);
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('1001','Ade','Gede','2002-04-02','M','1977-09-10','Jalan Pres No. 13','Teacher');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('1002','Susila','Handoko','2004-08-10','F','1978-06-27','Jalan Satria No. 3','Teacher');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('1003','Tanasal','Susanto','2003-09-28','M','1976-05-31','Jalan Flamboyan No. 5','Teacher');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('1004','Fangestu','Longwei','2001-05-08','M','1984-12-27','Jalan Tresan No. 9','Teacher');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('1005','Mutlaq','Ayala','2001-08-10','F','1981-04-20','Jalan Restadana No. 20','Teacher');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('1006','Caleb','Silitonga','2001-01-16','M','1980-04-13','Jalan Sikat No. 90','Teacher');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('1007','Asa','Ujung','2001-07-23','M','1988-01-03','Jalan Handana No. 38','Teacher');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('1008','Azariah','Ujung','2004-09-16','F','1972-07-13','Jalan Fendir No. 42','Teacher');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('1009','Suripto','Marsono','2005-06-20','M','1981-12-07','Jalan Gede No. 27','Teacher');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('1010','Raharjo','Sutedja','2001-10-11','M','1973-11-07','Jalan Yudasini No. 14','Teacher');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('1011','Glenna','Tedja','2005-11-02','F','1980-10-12','Jalan Setarwar No. 19','Teacher');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('1012','Sinta','Budiaman','2005-06-09','F','1982-03-30','Jalan Bambelbi No. 1','Teacher');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('1013','Abraham','Jia','2005-10-05','M','1980-01-08','Jalan Teranse No. 78','Teacher');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('2014','Kosasih','Susanti','2001-12-23','F','1986-09-16','Jalan Avalon No. 18','Administrator');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('2015','Daisy','Oktulseja','2003-06-20','F','1980-08-08','Jalan Honda No. 20','Administrator');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('2016','Hadassah','Boliala','2003-07-25','M','1983-03-21','Jalan Resemi No. 2','Administrator');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('3017','Tirzah','Solia','2000-07-24','F','1979-06-11','Jalan Wedang No. 53','Janitor');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('3018','Huldah','Sinusinga','2004-07-01','M','1980-02-14','Jalan Ronde No. 36','Janitor');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('3019','Wangi','Tirtajaya','2002-10-28','F','1984-08-27','Jalan Kitakita No. 28','Janitor');
+INSERT INTO employee(employee_id,employeeFirstName,employeeLastName,start_date,sex,birth_date,address,employee_categ) VALUES ('3020','Suminten','Darmawan','2005-10-18','F','1976-11-17','Jalan Grendalin No. 46','Janitor');
+
+DROP TABLE IF EXISTS examination;
+CREATE TABLE examination(
+exam_id VARCHAR(9) NOT NULL PRIMARY KEY
+,subject_id VARCHAR(5) NOT NULL
+,component VARCHAR(50) NOT NULL
+,type VARCHAR(3) NOT NULL
+,academic_year VARCHAR(9) NOT NULL,
+FOREIGN_KEY(subject_id) REFERENCES subject_master(subject_id)
+);
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1BIN10','BIN10','Pilihan Ganda 40 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1BIG10','BIG10','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1MAN10','MAN10','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1PKN10','PKN10','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1PAK10','PAK10','Essay 15 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1OLG10','OLG10','Pilihan Ganda 30 soal, Isian 20 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1MDS10','MDS10','Pilihan Ganda 30 soal, Isian 5 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1MTK10','MTK10','Pilihan Ganda 40 soal, Essay 10 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1BIO10','BIO10','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1KIM10','KIM10','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1FIS10','FIS10','Pilihan Ganda 40 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1EKO10','EKO10','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1SEJ10','SEJ10','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1GEO10','GEO10','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1BIN11','BIN11','Pilihan Ganda 40 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1BIG11','BIG11','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1MAN11','MAN11','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1PKN11','PKN11','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1PAK11','PAK11','Essay 15 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1OLG11','OLG11','Pilihan Ganda 30 soal, Isian 20 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1MDS11','MDS11','Pilihan Ganda 30 soal, Isian 5 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1MTK11','MTK11','Pilihan Ganda 40 soal, Essay 10 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1BIO11','BIO11','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1KIM11','KIM11','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1FIS11','FIS11','Pilihan Ganda 40 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1EKO11','EKO11','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1SEJ11','SEJ11','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1GEO11','GEO11','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1BIN12','BIN12','Pilihan Ganda 40 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1BIG12','BIG12','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1MAN12','MAN12','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1PKN12','PKN12','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1PAK12','PAK12','Essay 15 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1OLG12','OLG12','Pilihan Ganda 30 soal, Isian 20 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1MDS12','MDS12','Pilihan Ganda 30 soal, Isian 5 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1MTK12','MTK12','Pilihan Ganda 40 soal, Essay 10 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1BIO12','BIO12','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1KIM12','KIM12','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1FIS12','FIS12','Pilihan Ganda 40 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1EKO12','EKO12','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1SEJ12','SEJ12','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS1GEO12','GEO12','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1BIN10','BIN10','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1BIG10','BIG10','Pilihan Ganda 40 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1MAN10','MAN10','Pilihan Ganda 30 soal, Isian 5 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1PKN10','PKN10','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1PAK10','PAK10','Pilihan Ganda 45 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1OLG10','OLG10','Essay 10 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1MDS10','MDS10','Pilihan Ganda 30 soal, Isian 20 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1MTK10','MTK10','Pilihan Ganda 40 soal, Essay 10 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1BIO10','BIO10','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1KIM10','KIM10','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1FIS10','FIS10','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1EKO10','EKO10','Pilihan Ganda 40 soal, Essay 10 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1SEJ10','SEJ10','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1GEO10','GEO10','Pilihan Ganda 40 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1BIN11','BIN11','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1BIG11','BIG11','Pilihan Ganda 40 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1MAN11','MAN11','Pilihan Ganda 30 soal, Isian 5 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1PKN11','PKN11','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1PAK11','PAK11','Pilihan Ganda 45 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1OLG11','OLG11','Essay 10 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1MDS11','MDS11','Pilihan Ganda 30 soal, Isian 20 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1MTK11','MTK11','Pilihan Ganda 40 soal, Essay 10 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1BIO11','BIO11','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1KIM11','KIM11','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1FIS11','FIS11','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1EKO11','EKO11','Pilihan Ganda 40 soal, Essay 10 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1SEJ11','SEJ11','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1GEO11','GEO11','Pilihan Ganda 40 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1BIN12','BIN12','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1BIG12','BIG12','Pilihan Ganda 40 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1MAN12','MAN12','Pilihan Ganda 30 soal, Isian 5 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1PKN12','PKN12','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1PAK12','PAK12','Pilihan Ganda 45 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1OLG12','OLG12','Essay 10 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1MDS12','MDS12','Pilihan Ganda 30 soal, Isian 20 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1MTK12','MTK12','Pilihan Ganda 40 soal, Essay 10 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1BIO12','BIO12','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1KIM12','KIM12','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1FIS12','FIS12','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1EKO12','EKO12','Pilihan Ganda 40 soal, Essay 10 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1SEJ12','SEJ12','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS1GEO12','GEO12','Pilihan Ganda 40 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2BIN10','BIN10','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2BIG10','BIG10','Pilihan Ganda 40 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2MAN10','MAN10','Pilihan Ganda 30 soal, Isian 20 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2PKN10','PKN10','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2PAK10','PAK10','Essay 15 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2OLG10','OLG10','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2MDS10','MDS10','Pilihan Ganda 40 soal, Essay 10 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2MTK10','MTK10','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2BIO10','BIO10','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2KIM10','KIM10','Pilihan Ganda 30 soal, Isian 5 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2FIS10','FIS10','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2EKO10','EKO10','Pilihan Ganda 40 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2SEJ10','SEJ10','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2GEO10','GEO10','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2BIN11','BIN11','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2BIG11','BIG11','Pilihan Ganda 40 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2MAN11','MAN11','Pilihan Ganda 30 soal, Isian 20 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2PKN11','PKN11','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2PAK11','PAK11','Essay 15 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2OLG11','OLG11','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2MDS11','MDS11','Pilihan Ganda 40 soal, Essay 10 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2MTK11','MTK11','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2BIO11','BIO11','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2KIM11','KIM11','Pilihan Ganda 30 soal, Isian 5 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2FIS11','FIS11','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2EKO11','EKO11','Pilihan Ganda 40 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2SEJ11','SEJ11','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2GEO11','GEO11','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2BIN12','BIN12','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2BIG12','BIG12','Pilihan Ganda 40 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2MAN12','MAN12','Pilihan Ganda 30 soal, Isian 20 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2PKN12','PKN12','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2PAK12','PAK12','Essay 15 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2OLG12','OLG12','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2MDS12','MDS12','Pilihan Ganda 40 soal, Essay 10 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2MTK12','MTK12','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2BIO12','BIO12','Pilihan Ganda 45 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2KIM12','KIM12','Pilihan Ganda 30 soal, Isian 5 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2FIS12','FIS12','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2EKO12','EKO12','Pilihan Ganda 40 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2SEJ12','SEJ12','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UTS2GEO12','GEO12','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UTS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2BIN10','BIN10','Pilihan Ganda 30 soal, Isian 5 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2BIG10','BIG10','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2MAN10','MAN10','Pilihan Ganda 45 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2PKN10','PKN10','Pilihan Ganda 40 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2PAK10','PAK10','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2OLG10','OLG10','Pilihan Ganda 30 soal, Isian 20 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2MDS10','MDS10','Essay 15 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2MTK10','MTK10','Pilihan Ganda 45 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2BIO10','BIO10','Pilihan Ganda 40 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2KIM10','KIM10','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2FIS10','FIS10','Pilihan Ganda 40 soal, Essay 10 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2EKO10','EKO10','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2SEJ10','SEJ10','Pilihan Ganda 45 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2GEO10','GEO10','Pilihan Ganda 45 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2BIN11','BIN11','Pilihan Ganda 30 soal, Isian 5 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2BIG11','BIG11','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2MAN11','MAN11','Pilihan Ganda 45 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2PKN11','PKN11','Pilihan Ganda 40 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2PAK11','PAK11','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2OLG11','OLG11','Pilihan Ganda 30 soal, Isian 20 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2MDS11','MDS11','Essay 15 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2MTK11','MTK11','Pilihan Ganda 45 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2BIO11','BIO11','Pilihan Ganda 40 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2KIM11','KIM11','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2FIS11','FIS11','Pilihan Ganda 40 soal, Essay 10 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2EKO11','EKO11','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2SEJ11','SEJ11','Pilihan Ganda 45 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2GEO11','GEO11','Pilihan Ganda 45 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2BIN12','BIN12','Pilihan Ganda 30 soal, Isian 5 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2BIG12','BIG12','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2MAN12','MAN12','Pilihan Ganda 45 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2PKN12','PKN12','Pilihan Ganda 40 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2PAK12','PAK12','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2OLG12','OLG12','Pilihan Ganda 30 soal, Isian 20 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2MDS12','MDS12','Essay 15 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2MTK12','MTK12','Pilihan Ganda 45 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2BIO12','BIO12','Pilihan Ganda 40 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2KIM12','KIM12','Pilihan Ganda 30 soal, Isian 15 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2FIS12','FIS12','Pilihan Ganda 40 soal, Essay 10 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2EKO12','EKO12','Pilihan Ganda 40 soal, Isian 10 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2SEJ12','SEJ12','Pilihan Ganda 45 soal, Essay 5 soal','UAS','2020/2021');
+INSERT INTO examination(exam_id,subject_id,component,type,academic_year) VALUES ('UAS2GEO12','GEO12','Pilihan Ganda 45 soal, Essay 5 soal','UAS','2020/2021');
