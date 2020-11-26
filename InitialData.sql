@@ -3621,3 +3621,28 @@ INSERT INTO entry_log(visitor_id,date,entry_time,exit_time,purpose,facility_id) 
 INSERT INTO entry_log(visitor_id,date,entry_time,exit_time,purpose,facility_id) VALUES ('3017','2021-06-15','12:20','13:01','Membersihkan lapangan','FAC001');
 INSERT INTO entry_log(visitor_id,date,entry_time,exit_time,purpose,facility_id) VALUES ('00009','2021-06-18','12:35','12:41','Ambil barang','FAC006');
 INSERT INTO entry_log(visitor_id,date,entry_time,exit_time,purpose,facility_id) VALUES ('00003','2021-07-08','16:20','17:31','Bermain bola','FAC002');
+
+DROP TABLE IF EXISTS extracurricular_schedule;
+CREATE TABLE extracurricular_schedule(
+extracurricular_id VARCHAR(6) NOT NULL
+,academic_year VARCHAR(9) NOT NULL
+,day VARCHAR(9) NOT NULL
+,PRIMARY KEY(extracurricular_id,academic_year)
+,FOREIGN KEY (extracurricular_id)
+REFERENCES extracurricular(extracurricular_id)
+);
+INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC001','2018/2019','Monday');
+INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC002','2018/2019','Tuesday');
+INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC003','2018/2019','Wednesday');
+INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC004','2018/2019','Thursday');
+INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC005','2018/2019','Friday');
+INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC001','2019/2020','Monday');
+INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC002','2019/2020','Wednesday');
+INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC003','2019/2020','Friday');
+INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC004','2019/2020','Tuesday');
+INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC005','2019/2020','Thursday');
+INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC001','2020/2021','Monday');
+INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC002','2020/2021','Wednesday');
+INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC003','2020/2021','Tuesday');
+INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC004','2020/2021','Friday');
+INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC005','2020/2021','Thursday');
