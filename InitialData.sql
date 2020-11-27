@@ -1,3 +1,7 @@
+DROP DATABASE IF EXISTS `school`;
+CREATE DATABASE `school`;
+USE `school`;
+
 DROP TABLE IF EXISTS student;
 CREATE TABLE student(
 student_id CHAR(5) NOT NULL PRIMARY KEY
@@ -1496,7 +1500,7 @@ INSERT INTO facility_details(facility_id,effective_date,property,quantity) VALUE
 INSERT INTO facility_details(facility_id,effective_date,property,quantity) VALUES ('FAC002','2020-07-20','soccer goalpost',2); 
 INSERT INTO facility_details(facility_id,effective_date,property,quantity) VALUES ('FAC002','2020-07-27','soccer balls',5);    
 INSERT INTO facility_details(facility_id,effective_date,property,quantity) VALUES ('FAC003','2020-07-21','badminton net',1);   
-INSERT INTO facility_details(facility_id,effective_date,property,quantity) VALUES ('FAC003','2020-07-27','badminton rackets',4)
+INSERT INTO facility_details(facility_id,effective_date,property,quantity) VALUES ('FAC003','2020-07-27','badminton rackets',4);
 INSERT INTO facility_details(facility_id,effective_date,property,quantity) VALUES ('FAC003','2020-07-27','shuttle cocks',2);   
 INSERT INTO facility_details(facility_id,effective_date,property,quantity) VALUES ('FAC004','2020-07-23','scientific kits',10);
 INSERT INTO facility_details(facility_id,effective_date,property,quantity) VALUES ('FAC006','2020-07-20','chairs+desks',20);   
