@@ -1407,7 +1407,7 @@ INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P001','BIG11
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P002','BIG11S012021','Monday');
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P004','EKO11S012021','Monday');
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P006','EKO11S012021','Monday');
-INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P001','MTK11S012020','Tuesday');
+INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P001','MTK11S012021','Tuesday');
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P002','OLG11S012021','Tuesday');
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P004','MAN11S012021','Tuesday');
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P006','MAN11S012021','Tuesday');
@@ -1418,7 +1418,7 @@ INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P006','GEO11
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P001','SEJ11S012021','Thursday');
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P002','SEJ11S012021','Thursday');
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P004','MDS11S012021','Thursday');
-INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P006','MTK11S012020','Thursday');
+INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P006','MTK11S012021','Thursday');
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P001','PAK11S012021','Friday');
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P002','PAK11S012021','Friday');
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P004','BIN11S012021','Friday');
@@ -1440,7 +1440,7 @@ INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P002','BIG12
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P004','BIO12A012021','Thursday');
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P006','BIO12A012021','Thursday');
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P001','FIS12A012021','Friday');
-INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P002','FIS12A012022','Friday');
+INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P002','FIS12A012021','Friday');
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P004','PAK12A012021','Friday');
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P006','PAK12A012021','Friday');
 INSERT INTO class_schedule(period_id,subject_class_id,day) VALUES ('P001','GEO12S012021','Monday');
