@@ -1517,7 +1517,7 @@ INSERT INTO facility_details(facility_id,effective_date,property,quantity) VALUE
 INSERT INTO facility_details(facility_id,effective_date,property,quantity) VALUES ('FAC011','2020-07-20','projector+screen',1);
 
 
-DROP TABLE IF EXIST facility_conditions;
+DROP TABLE IF EXISTS facility_conditions;
 CREATE TABLE facility_conditions(
 f_report_id VARCHAR(8) NOT NULL PRIMARY KEY
 ,facility_id VARCHAR(6) NOT NULL
@@ -1678,11 +1678,11 @@ INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00012','MAN11A012021','2020-10-16','UTS1',47);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00012','MDS11A012021','2020-10-22','UTS1',41);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00012','MTK11A012021','2020-10-12','UTS1',28);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00012','OLG11A012021','2020-10-21','UTS1',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00012','OLG11A012021','2020-10-21','UTS1',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00012','PAK11A012021','2020-10-18','UTS1',40);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00012','PKN11A012021','2020-10-17','UTS1',81);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00013','MTK11S012021','2020-10-12','UTS1',99);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00013','BIG11S012021','2020-10-15','UTS1',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00013','BIG11S012021','2020-10-15','UTS1',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00013','BIN11S012021','2020-10-14','UTS1',8); 
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00013','EKO11S012021','2020-10-18','UTS1',34);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00013','GEO11S012021','2020-10-22','UTS1',19);
@@ -1705,7 +1705,7 @@ INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00014','SEJ11S012021','2020-10-21','UTS1',14);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00015','MTK11S012021','2020-10-12','UTS1',10);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00015','BIG11S012021','2020-10-15','UTS1',11);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00015','BIN11S012021','2020-10-14','UTS1',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00015','BIN11S012021','2020-10-14','UTS1',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00015','EKO11S012021','2020-10-18','UTS1',35);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00015','GEO11S012021','2020-10-22','UTS1',79);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00015','MAN11S012021','2020-10-16','UTS1',94);
@@ -1803,12 +1803,12 @@ INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00023','KIM10A012021','2020-10-16','UTS1',61);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00023','FIS10A012021','2020-10-17','UTS1',27);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00024','BIN10S012021','2020-10-14','UTS1',82);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00024','BIG10S012021','2020-10-15','UTS1',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00024','BIG10S012021','2020-10-15','UTS1',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00024','MAN10S012021','2020-10-16','UTS1',39);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00024','PKN10S012021','2020-10-17','UTS1',26);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00024','PAK10S012021','2020-10-18','UTS1',46);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00024','OLG10S012021','2020-10-21','UTS1',68);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00024','MDS10S012021','2020-10-22','UTS1',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00024','MDS10S012021','2020-10-22','UTS1',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00024','MTK10S012021','2020-10-12','UTS1',78);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00024','EKO10S012021','2020-10-18','UTS1',86);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00024','SEJ10S012021','2020-10-21','UTS1',43);
@@ -1849,7 +1849,7 @@ INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00003','BIN12S012021','2020-12-14','UAS1',86);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00003','BIG12S012021','2020-12-15','UAS1',69);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00003','MAN12S012021','2020-12-16','UAS1',3); 
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00003','PKN12S012021','2020-12-17','UAS1',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00003','PKN12S012021','2020-12-17','UAS1',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00003','PAK12S012021','2020-12-18','UAS1',43);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00003','OLG12S012021','2020-12-21','UAS1',22);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00003','MDS12S012021','2020-12-22','UAS1',77);
@@ -2029,7 +2029,7 @@ INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00019','PAK10A012021','2020-12-18','UAS1',2); 
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00019','OLG10A012021','2020-12-21','UAS1',52);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00019','MDS10A012021','2020-12-22','UAS1',49);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00019','MTK10A012021','2020-12-12','UAS1',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00019','MTK10A012021','2020-12-12','UAS1',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00019','BIO10A012021','2020-12-15','UAS1',13);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00019','KIM10A012021','2020-12-16','UAS1',72);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00019','FIS10A012021','2020-12-17','UAS1',85);
@@ -2051,7 +2051,7 @@ INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00021','PAK10S012021','2020-12-18','UAS1',65);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00021','OLG10S012021','2020-12-21','UAS1',84);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00021','MDS10S012021','2020-12-22','UAS1',29);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00021','MTK10S012021','2020-12-12','UAS1',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00021','MTK10S012021','2020-12-12','UAS1',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00021','EKO10S012021','2020-12-18','UAS1',54);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00021','SEJ10S012021','2020-12-21','UAS1',63);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00021','GEO10S012021','2020-12-22','UAS1',51);
@@ -2210,7 +2210,7 @@ INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00010','PKN11S012021','2020-12-17','KAT1',68);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00010','SEJ11S012021','2020-12-21','KAT1',43);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00011','MTK11S012021','2020-12-12','KAT1',88);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00011','BIG11S012021','2020-12-15','KAT1',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00011','BIG11S012021','2020-12-15','KAT1',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00011','BIN11S012021','2020-12-14','KAT1',73);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00011','EKO11S012021','2020-12-18','KAT1',19);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00011','GEO11S012021','2020-12-22','KAT1',82);
@@ -2237,7 +2237,7 @@ INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00013','EKO11S012021','2020-12-18','KAT1',94);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00013','GEO11S012021','2020-12-22','KAT1',77);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00013','MAN11S012021','2020-12-16','KAT1',61);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00013','MDS11S012021','2020-12-22','KAT1',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00013','MDS11S012021','2020-12-22','KAT1',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00013','OLG11S012021','2020-12-21','KAT1',4); 
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00013','PAK11S012021','2020-12-18','KAT1',77);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00013','PKN11S012021','2020-12-17','KAT1',86);
@@ -2281,9 +2281,9 @@ INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00017','PKN10S012021','2020-12-17','KAT1',91);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00017','PAK10S012021','2020-12-18','KAT1',86);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00017','OLG10S012021','2020-12-21','KAT1',22);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00017','MDS10S012021','2020-12-22','KAT1',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00017','MDS10S012021','2020-12-22','KAT1',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00017','MTK10S012021','2020-12-12','KAT1',8); 
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00017','EKO10S012021','2020-12-18','KAT1',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00017','EKO10S012021','2020-12-18','KAT1',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00017','SEJ10S012021','2020-12-21','KAT1',39);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00017','GEO10S012021','2020-12-22','KAT1',74);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00018','BIN10A012021','2020-12-14','KAT1',7); 
@@ -2301,7 +2301,7 @@ INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00019','BIG10A012021','2020-12-15','KAT1',16);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00019','MAN10A012021','2020-12-16','KAT1',83);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00019','PKN10A012021','2020-12-17','KAT1',39);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00019','PAK10A012021','2020-12-18','KAT1',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00019','PAK10A012021','2020-12-18','KAT1',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00019','OLG10A012021','2020-12-21','KAT1',66);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00019','MDS10A012021','2020-12-22','KAT1',59);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00019','MTK10A012021','2020-12-12','KAT1',73);
@@ -2388,7 +2388,7 @@ INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00002','BIN12S012021','2021-04-14','UTS2',52);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00002','BIG12S012021','2021-04-15','UTS2',36);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00002','MAN12S012021','2021-04-16','UTS2',62);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00002','PKN12S012021','2021-04-17','UTS2',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00002','PKN12S012021','2021-04-17','UTS2',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00002','PAK12S012021','2021-04-18','UTS2',61);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00002','OLG12S012021','2021-04-21','UTS2',92);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00002','MDS12S012021','2021-04-22','UTS2',93);
@@ -2478,7 +2478,7 @@ INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00010','BIN11S012021','2021-04-14','UTS2',15);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00010','EKO11S012021','2021-04-18','UTS2',56);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00010','GEO11S012021','2021-04-22','UTS2',33);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00010','MAN11S012021','2021-04-16','UTS2',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00010','MAN11S012021','2021-04-16','UTS2',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00010','MDS11S012021','2021-04-22','UTS2',39);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00010','OLG11S012021','2021-04-21','UTS2',2); 
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00010','PAK11S012021','2021-04-18','UTS2',83);
@@ -2836,7 +2836,7 @@ INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00017','EKO10S012021','2021-07-18','UAS2',8); 
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00017','SEJ10S012021','2021-07-21','UAS2',82);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00017','GEO10S012021','2021-07-22','UAS2',67);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00018','BIN10A012021','2021-07-14','UAS2',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00018','BIN10A012021','2021-07-14','UAS2',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00018','BIG10A012021','2021-07-15','UAS2',75);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00018','MAN10A012021','2021-07-16','UAS2',1); 
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00018','PKN10A012021','2021-07-17','UAS2',33);
@@ -3035,7 +3035,7 @@ INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00010','PKN11S012021','2021-07-17','KAT2',47);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00010','SEJ11S012021','2021-07-21','KAT2',80);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00011','MTK11S012021','2021-07-12','KAT2',73);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00011','BIG11S012021','2021-07-15','KAT2',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00011','BIG11S012021','2021-07-15','KAT2',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00011','BIN11S012021','2021-07-14','KAT2',52);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00011','EKO11S012021','2021-07-18','KAT2',96);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00011','GEO11S012021','2021-07-22','KAT2',80);
@@ -3095,7 +3095,7 @@ INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00016','PKN10A012021','2021-07-17','KAT2',88);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00016','PAK10A012021','2021-07-18','KAT2',59);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00016','OLG10A012021','2021-07-21','KAT2',55);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00016','MDS10A012021','2021-07-22','KAT2',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00016','MDS10A012021','2021-07-22','KAT2',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00016','MTK10A012021','2021-07-12','KAT2',15);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00016','BIO10A012021','2021-07-15','KAT2',36);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00016','KIM10A012021','2021-07-16','KAT2',3); 
@@ -3194,7 +3194,7 @@ INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00025','EKO10S012021','2021-07-18','KAT2',56);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00025','GEO10S012021','2021-07-22','KAT2',8); 
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00025','MAN10S012021','2021-07-16','KAT2',51);
-INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00025','MDS10S012021','2021-07-22','KAT2',100)
+INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00025','MDS10S012021','2021-07-22','KAT2',100);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00025','OLG10S012021','2021-07-21','KAT2',50);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00025','PAK10S012021','2021-07-18','KAT2',95);
 INSERT INTO score(student_id,subject_class_id,input_date,component,score) VALUES ('00025','PKN10S012021','2021-07-17','KAT2',11);
