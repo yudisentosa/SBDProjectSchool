@@ -3308,3 +3308,187 @@ INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUE
 INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC003','2020/2021','Tuesday');
 INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC004','2020/2021','Friday');
 INSERT INTO extracurricular_schedule(extracurricular_id,academic_year,day) VALUES ('EXC005','2020/2021','Thursday');
+
+DROP TABLE IF EXISTS extracurricular_attendance;
+CREATE TABLE extracurricular_attendance(
+student_id CHAR(5) NOT NULL
+,date DATE NOT NULL
+,attandance_detail VARCHAR(9) NOT NULL
+,PRIMARY KEY(date,student_id)
+,FOREIGN KEY(student_id)
+REFERENCES student(student_id)
+);
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00022','2020-07-23','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00010','2020-07-31','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00020','2020-08-01','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00020','2020-08-02','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00003','2020-08-03','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00018','2020-08-03','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00020','2020-08-03','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00021','2020-08-05','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00023','2020-08-07','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00021','2020-08-10','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00001','2020-08-24','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00010','2020-08-25','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00015','2020-08-28','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00004','2020-09-25','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00003','2020-09-25','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00019','2020-09-30','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00018','2020-09-30','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00010','2020-10-16','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00017','2020-10-27','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00020','2020-10-29','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00005','2020-10-30','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00001','2020-11-03','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00022','2020-11-09','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00015','2020-11-11','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00011','2020-11-18','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00021','2020-11-18','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00010','2020-12-07','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00019','2020-12-10','ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00015','2020-12-15','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00002','2020-12-30','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00015','2021-01-07','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00022','2021-01-17','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00021','2021-01-30','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00017','2021-02-12','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00010','2021-02-15','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00020','2021-02-24','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00022','2021-02-25','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00023','2021-02-26','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00016','2021-03-03','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00004','2021-03-06','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00018','2021-03-12','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00009','2021-03-23','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00010','2021-03-23','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00001','2021-03-24','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00023','2021-03-25','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00014','2021-03-30','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00013','2021-04-01','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00005','2021-04-20','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00001','2021-04-21','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00023','2021-04-21','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00012','2021-04-21','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00001','2021-04-27','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00011','2021-05-01','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00012','2021-05-03','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00010','2021-05-04','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00023','2021-05-12','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00003','2021-05-13','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00004','2021-05-13','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00019','2021-05-13','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00021','2021-05-18','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00025','2021-05-20','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00005','2021-05-21','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00004','2021-05-21','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00011','2021-05-27','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00024','2021-06-02','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00018','2021-06-05','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00019','2021-06-11','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00016','2021-06-15','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00006','2021-06-15','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00024','2021-06-26','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00003','2021-07-07','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00009','2021-07-14','Sakit');
+
+DROP TABLE extracurricular_score;
+CREATE TABLE extracurricular_score(
+student_id CHAR(5) NOT NULL
+,academic_year VARCHAR(9) NOT NULL
+,semester INTEGER NOT NULL
+,input_date DATE NOT NULL
+,extracurricular_score INTEGER NOT NULL
+, PRIMARY KEY(academic_year, semester,student_id)
+, FOREIGN KEY(student_id)
+REFERENCES student(student_id)
+);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00001','2018/2019',1,'2018-12-10',74);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00002','2018/2019',1,'2018-12-13',88);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00003','2018/2019',1,'2018-12-22',76);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00004','2018/2019',1,'2018-12-08',77);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00005','2018/2019',1,'2018-12-03',77);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00001','2018/2019',2,'2019-07-05',60);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00002','2018/2019',2,'2019-07-08',76);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00003','2018/2019',2,'2019-07-09',78);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00004','2018/2019',2,'2019-07-11',87);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00005','2018/2019',2,'2019-07-12',75);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00006','2019/2020',1,'2019-12-11',63);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00007','2019/2020',1,'2019-12-12',79);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00012','2019/2020',1,'2019-12-13',83);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00013','2019/2020',1,'2019-12-14',64);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00014','2019/2020',1,'2019-12-11',76);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00015','2019/2020',1,'2019-12-11',69);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00001','2019/2020',1,'2019-12-12',78);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00002','2019/2020',1,'2019-12-14',90);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00003','2019/2020',1,'2019-12-11',84);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00004','2019/2020',1,'2019-12-11',86);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00005','2019/2020',1,'2019-12-12',89);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00008','2019/2020',1,'2019-12-13',75);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00009','2019/2020',1,'2019-12-13',76);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00010','2019/2020',1,'2019-12-12',87);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00011','2019/2020',1,'2019-12-11',64);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00006','2019/2020',2,'2020-07-18',70);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00007','2019/2020',2,'2020-07-13',79);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00012','2019/2020',2,'2020-07-13',80);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00013','2019/2020',2,'2020-07-18',61);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00014','2019/2020',2,'2020-07-12',65);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00015','2019/2020',2,'2020-07-12',70);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00001','2019/2020',2,'2020-07-18',71);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00002','2019/2020',2,'2020-07-13',86);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00003','2019/2020',2,'2020-07-14',76);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00004','2019/2020',2,'2020-07-11',77);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00005','2019/2020',2,'2020-07-12',61);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00008','2019/2020',2,'2020-07-18',90);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00009','2019/2020',2,'2020-07-14',86);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00010','2019/2020',2,'2020-07-11',78);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00011','2019/2020',2,'2020-07-12',82);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00003','2020/2021',1,'2020-12-11',76);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00006','2020/2021',1,'2020-12-13',89);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00010','2020/2021',1,'2020-12-11',86);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00011','2020/2021',1,'2020-12-13',86);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00018','2020/2021',1,'2020-12-14',85);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00020','2020/2021',1,'2020-12-11',85);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00009','2020/2021',1,'2020-12-11',69);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00022','2020/2021',1,'2020-12-11',84);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00001','2020/2021',1,'2020-12-11',81);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00013','2020/2021',1,'2020-12-11',63);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00004','2020/2021',1,'2020-12-13',82);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00016','2020/2021',1,'2020-12-13',88);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00017','2020/2021',1,'2020-12-11',87);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00019','2020/2021',1,'2020-12-11',72);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00002','2020/2021',1,'2020-12-14',83);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00007','2020/2021',1,'2020-12-13',90);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00008','2020/2021',1,'2020-12-11',67);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00015','2020/2021',1,'2020-12-14',76);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00021','2020/2021',1,'2020-12-14',85);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00023','2020/2021',1,'2020-12-11',81);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00024','2020/2021',1,'2020-12-11',72);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00005','2020/2021',1,'2020-12-11',72);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00012','2020/2021',1,'2020-12-11',81);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00014','2020/2021',1,'2020-12-14',87);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00025','2020/2021',1,'2020-12-11',79);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00003','2020/2021',2,'2021-07-10',86);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00006','2020/2021',2,'2021-07-11',75);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00010','2020/2021',2,'2021-07-10',62);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00011','2020/2021',2,'2021-07-11',82);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00018','2020/2021',2,'2021-07-12',77);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00020','2020/2021',2,'2021-07-09',71);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00009','2020/2021',2,'2021-07-09',77);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00022','2020/2021',2,'2021-07-09',79);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00001','2020/2021',2,'2021-07-09',61);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00013','2020/2021',2,'2021-07-09',71);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00004','2020/2021',2,'2021-07-11',88);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00016','2020/2021',2,'2021-07-11',84);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00017','2020/2021',2,'2021-07-09',70);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00019','2020/2021',2,'2021-07-10',63);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00002','2020/2021',2,'2021-07-12',88);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00007','2020/2021',2,'2021-07-11',84);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00008','2020/2021',2,'2021-07-09',63);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00015','2020/2021',2,'2021-07-12',76);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00021','2020/2021',2,'2021-07-12',87);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00023','2020/2021',2,'2021-07-09',64);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00024','2020/2021',2,'2021-07-11',90);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00005','2020/2021',2,'2021-07-11',68);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00012','2020/2021',2,'2021-07-11',74);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00014','2020/2021',2,'2021-07-12',81);
+INSERT INTO extracurricular_score(student_id,academic_year,semester,input_date,extracurricular_score) VALUES ('00025','2020/2021',2,'2021-07-11',81);
