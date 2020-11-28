@@ -1526,17 +1526,17 @@ f_report_id VARCHAR(8) NOT NULL PRIMARY KEY
 ,note VARCHAR(34) NOT NULL,
 FOREIGN KEY(facility_id) REFERENCES facility(facility_id)
 );
-INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC001','FAC001','Fair','2020-07-30','attention required in next 2 years');
-INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC002','FAC002','Fair','2020-07-30','attention required in next 2 years');
-INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC003','FAC003','Fair','2020-07-30','attention required in next 2 years');
-INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC004','FAC004','Adequate','2020-07-25','attention required in next 5 years');
-INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC005','FAC005','Adequate','2020-07-25','attention required in next 5 years');
-INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC006','FAC006','Adequate','2020-07-25','attention required in next 5 years');
-INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC007','FAC007','Adequate','2020-07-25','attention required in next 5 years');
-INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC008','FAC008','Adequate','2020-07-25','attention required in next 5 years');
-INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC009','FAC009','Adequate','2020-07-25','attention required in next 5 years');
-INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC010','FAC010','Adequate','2020-07-25','attention required in next 5 years');
-INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC011','FAC011','Adequate','2020-07-25','attention required in next 5 years');
+INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC001','FAC001','Baik','2021-08-01','-');
+INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC002','FAC002','Buruk','2021-08-01','ada 1 bola yang hilang');
+INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC003','FAC003','Baik','2021-08-01','-');
+INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC004','FAC004','Baik','2021-08-01','-');
+INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC005','FAC005','Baik','2021-08-01','-');
+INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC006','FAC006','Baik','2021-08-01','-');
+INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC007','FAC007','Baik','2021-08-01','-');
+INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC008','FAC008','Baik','2021-08-01','-');
+INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC009','FAC009','Baik','2021-08-01','-');
+INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC010','FAC010','Baik','2021-08-01','-');
+INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC011','FAC011','Baik','2021-08-01','-');
 
 DROP TABLE IF EXISTS score;                                                                                                      
 CREATE TABLE score(                                                                                                              
