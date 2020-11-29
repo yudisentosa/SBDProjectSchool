@@ -4,38 +4,37 @@ USE `school`;
 
 DROP TABLE IF EXISTS student;
 CREATE TABLE student(
-student_id CHAR(5) NOT NULL PRIMARY KEY
-,student_name VARCHAR(14) NOT NULL
-,sex VARCHAR(1) NOT NULL
-,birth_date DATE NOT NULL
-,address VARCHAR(30) NOT NULL
-,major VARCHAR(7) NOT NULL
+   student_id   CHAR(5) NOT NULL PRIMARY KEY
+  ,student_name VARCHAR(14) NOT NULL
+  ,sex          VARCHAR(1) NOT NULL
+  ,birth_date   DATE  NOT NULL
+  ,address      VARCHAR(30) NOT NULL
 );
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00001','Agatha Lee','F','2002-03-30','Jalan Mawar no 10','Science');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00002','Logan Paul','M','2002-01-01','Jalan Sejahtera no 1','Social');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00003','Edward Bun','M','2002-04-12','Jalan RA Kartini no 26','Social');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00004','Jasleen Scott','F','2002-10-02','Jalan Bunga Putih no 12','Science');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00005','Lyle Cross','F','2002-10-17','Jalan Monginsidi no 6','Social');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00006','Bob Male','M','2003-02-28','Jalan Anggrek no 092','Science');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00007','Johan Elbert','M','2003-05-21','Jalan Dewata no 421','Science');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00008','King Midas','M','2004-07-07','Jalan Pasirian no 33','Social');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00009','John','M','2003-11-30','Jalan Pasir Hitam no 93','Science');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00010','Euan Mcintyre','M','2003-01-26','Jalan Kalpataru no 50','Social');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00011','Morgan Dunn','M','2004-11-18','Jalan Ikan Paus no 13','Social');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00012','Calvin Stevens','M','2004-12-27','Jalan Ikan Piranha no 101','Science');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00013','Josie Harris','F','2005-01-13','Jalan Ikan Hiu no 44','Social');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00014','Jay Harper','F','2005-05-31','Jalan Ikan Piranha no 11','Social');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00015','Connie Hill','F','2005-12-08','Jalan Ikan Paus no 12','Social');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00016','Maria Vania','F','2004-10-18','Jalan Bebas no 100','Science');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00017','Kaleb Bary','M','2005-04-09','Jalan Bebas no 100','Social');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00018','Ryan Simon','M','2005-08-11','Jalan Bebas no 100','Science');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00019','Sophie Brown','F','2004-03-22','Jalan Puri Indah no 21','Science');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00020','Stella Brown','F','2004-03-22','Jalan Puri Indah no 21','Science');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00021','Nevaeh Higgs','M','2003-07-31','Jalan Candi Jago no 2','Social');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00022','Skye Nieves','F','2005-06-23','Jalan Dipenogoro no 450','Social');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00023','Samirah Vaughn','F','2005-07-09','Jalan Terusan Dipenogoro no 31','Science');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00024','Tayla Bull','F','2005-11-24','Jalan Taman Kyoto no 42A','Social');
-INSERT INTO student(student_id,student_name,sex,birth_date,address,major) VALUES ('00025','Affan Atkinson','M','2005-12-04','Jalan Permata no 5','Social');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00001','Agatha Lee','F','2002-03-30','Jalan Mawar no 10');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00002','Logan Paul','M','2002-01-01','Jalan Sejahtera no 1');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00003','Edward Bun','M','2002-04-12','Jalan RA Kartini no 26');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00004','Jasleen Scott','F','2002-10-02','Jalan Bunga Putih no 12');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00005','Lyle Cross','F','2002-10-17','Jalan Monginsidi no 6');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00006','Bob Male','M','2003-02-28','Jalan Anggrek no 092');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00007','Johan Elbert','M','2003-05-21','Jalan Dewata no 421');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00008','King Midas','M','2004-07-07','Jalan Pasirian no 33');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00009','John','M','2003-11-30','Jalan Pasir Hitam no 93');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00010','Euan Mcintyre','M','2003-01-26','Jalan Kalpataru no 50');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00011','Morgan Dunn','M','2004-11-18','Jalan Ikan Paus no 13');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00012','Calvin Stevens','M','2004-12-27','Jalan Ikan Piranha no 101');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00013','Josie Harris','F','2005-01-13','Jalan Ikan Hiu no 44');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00014','Jay Harper','F','2005-05-31','Jalan Ikan Piranha no 11');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00015','Connie Hill','F','2005-12-08','Jalan Ikan Paus no 12');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00016','Maria Vania','F','2004-10-18','Jalan Bebas no 100');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00017','Kaleb Bary','M','2005-04-09','Jalan Bebas no 100');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00018','Ryan Simon','M','2005-08-11','Jalan Bebas no 100');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00019','Sophie Brown','F','2004-03-22','Jalan Puri Indah no 21');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00020','Stella Brown','F','2004-03-22','Jalan Puri Indah no 21');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00021','Nevaeh Higgs','M','2003-07-31','Jalan Candi Jago no 2');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00022','Skye Nieves','F','2005-06-23','Jalan Dipenogoro no 450');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00023','Samirah Vaughn','F','2005-07-09','Jalan Terusan Dipenogoro no 31');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00024','Tayla Bull','F','2005-11-24','Jalan Taman Kyoto no 42A');
+INSERT INTO student(student_id,student_name,sex,birth_date,address) VALUES ('00025','Affan Atkinson','M','2005-12-04','Jalan Permata no 5');
 
 DROP TABLE IF EXISTS class;
 CREATE TABLE class(
