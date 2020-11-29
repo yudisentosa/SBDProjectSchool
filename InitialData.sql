@@ -1560,7 +1560,7 @@ INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,
 INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC033','FAC011','Baik','2020-10-01','-');
 INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC034','FAC001','Baik','2020-11-01','-');
 INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC035','FAC002','Baik','2020-11-01','-');
-INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC036','FAC003','Bermasalah','2020-11-01','ada 1 raket yang patah');
+INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC036','FAC003','Baik','2020-11-01','-');
 INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC037','FAC004','Baik','2020-11-01','-');
 INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC038','FAC005','Baik','2020-11-01','-');
 INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC039','FAC006','Baik','2020-11-01','-');
