@@ -660,39 +660,39 @@ INSERT INTO tuition_price_history(tuition_id,effective_date,price) VALUES ('12GR
 INSERT INTO tuition_price_history(tuition_id,effective_date,price) VALUES ('12GR3','2015-07-21','$7.000,00');
 
 
-DROP TABLE IF EXISTS employee_attandance;
-CREATE TABLE employee_attandance(
+DROP TABLE IF EXISTS employee_attendance;
+CREATE TABLE employee_attendance(
    employee_id       VARCHAR(4) NOT NULL
   ,date              DATE  NOT NULL
-  ,attandance_detail VARCHAR(9) NOT NULL
+  ,attendance_detail VARCHAR(9) NOT NULL
 ,PRIMARY KEY(employee_id,date),
 FOREIGN KEY(employee_id) REFERENCES employee(employee_id)
 );
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('2014','2020-07-21','Terlambat');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('2015','2020-08-27','Sakit');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1005','2020-09-14','Sakit');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1003','2020-09-18','Alfa');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1001','2020-09-21','Sakit');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('3017','2020-09-30','Terlambat');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1005','2020-10-02','Izin');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1009','2020-10-26','Terlambat');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1006','2020-11-05','Terlambat');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1002','2020-11-12','Sakit');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1001','2020-11-20','Sakit');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('3020','2020-12-04','Terlambat');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('3018','2020-12-15','Izin');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1003','2021-02-04','Terlambat');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1008','2021-02-12','Sakit');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1011','2021-02-17','Terlambat');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1013','2021-02-26','Sakit');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1004','2021-03-01','Terlambat');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1002','2021-03-16','Terlambat');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1012','2021-03-31','Terlambat');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('2016','2021-04-29','Sakit');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1004','2021-05-24','Alfa');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1010','2021-05-27','Izin');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('1007','2021-05-28','Terlambat');
-INSERT INTO employee_attandance(employee_id,date,attandance_detail) VALUES ('3019','2021-07-20','Terlambat');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('2014','2020-07-21','Terlambat');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('2015','2020-08-27','Sakit');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1005','2020-09-14','Sakit');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1003','2020-09-18','Alfa');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1001','2020-09-21','Sakit');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('3017','2020-09-30','Terlambat');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1005','2020-10-02','Izin');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1009','2020-10-26','Terlambat');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1006','2020-11-05','Terlambat');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1002','2020-11-12','Sakit');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1001','2020-11-20','Sakit');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('3020','2020-12-04','Terlambat');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('3018','2020-12-15','Izin');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1003','2021-02-04','Terlambat');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1008','2021-02-12','Sakit');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1011','2021-02-17','Terlambat');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1013','2021-02-26','Sakit');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1004','2021-03-01','Terlambat');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1002','2021-03-16','Terlambat');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1012','2021-03-31','Terlambat');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('2016','2021-04-29','Sakit');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1004','2021-05-24','Alfa');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1010','2021-05-27','Izin');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('1007','2021-05-28','Terlambat');
+INSERT INTO employee_attendance(employee_id,date,attendance_detail) VALUES ('3019','2021-07-20','Terlambat');
 
 
 DROP TABLE IF EXISTS exam_schedule;
@@ -889,56 +889,56 @@ INSERT INTO class_facility(class_id,facility_id,effective_date) VALUES ('11IPS1'
 INSERT INTO class_facility(class_id,facility_id,effective_date) VALUES ('12IPA1','FAC010','2017-07-03');
 INSERT INTO class_facility(class_id,facility_id,effective_date) VALUES ('12IPS1','FAC011','2017-07-03');
 
-DROP TABLE IF EXISTS student_attandance;
-CREATE TABLE student_attandance(
+DROP TABLE IF EXISTS student_attendance;
+CREATE TABLE student_attendance(
 student_id CHAR(5) NOT NULL
 ,date DATE NOT NULL
-,attandance_detail VARCHAR(9) NOT NULL,
+,attendance_detail VARCHAR(9) NOT NULL,
 PRIMARY KEY(student_id, date),
 FOREIGN KEY(student_id) REFERENCES class_student(student_id)
 );
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00022','2020-07-23','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00010','2020-07-31','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00020','2020-08-01','Sakit');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00020','2020-08-02','Sakit');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00020','2020-08-03','Sakit');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00023','2020-08-07','Ijin');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00010','2020-08-25','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00015','2020-08-28','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00004','2020-09-25','Sakit');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00019','2020-09-30','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00010','2020-10-16','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00020','2020-10-29','Alfa');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00005','2020-10-30','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00001','2020-11-03','Ijin');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00022','2020-11-09','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00015','2020-11-11','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00011','2020-11-18','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00010','2020-12-07','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00019','2020-12-10','ijin');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00015','2020-12-15','Sakit');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00022','2021-01-18','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00021','2021-01-29','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00017','2021-02-12','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00020','2021-02-24','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00016','2021-03-03','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00004','2021-03-05','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00009','2021-03-23','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00023','2021-03-25','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00014','2021-03-30','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00013','2021-04-01','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00012','2021-04-21','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00001','2021-04-27','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00011','2021-04-30','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00010','2021-05-04','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00003','2021-05-13','Alfa');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00019','2021-05-13','Alfa');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00025','2021-05-20','Sakit');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00005','2021-05-21','Sakit');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00018','2021-06-07','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00024','2021-06-25','Terlambat');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00003','2021-07-07','Alfa');
-INSERT INTO student_attandance(student_id,date,attandance_detail) VALUES ('00009','2021-07-14','Sakit');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00022','2020-07-23','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00010','2020-07-31','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00020','2020-08-01','Sakit');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00020','2020-08-02','Sakit');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00020','2020-08-03','Sakit');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00023','2020-08-07','Ijin');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00010','2020-08-25','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00015','2020-08-28','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00004','2020-09-25','Sakit');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00019','2020-09-30','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00010','2020-10-16','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00020','2020-10-29','Alfa');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00005','2020-10-30','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00001','2020-11-03','Ijin');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00022','2020-11-09','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00015','2020-11-11','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00011','2020-11-18','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00010','2020-12-07','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00019','2020-12-10','ijin');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00015','2020-12-15','Sakit');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00022','2021-01-18','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00021','2021-01-29','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00017','2021-02-12','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00020','2021-02-24','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00016','2021-03-03','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00004','2021-03-05','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00009','2021-03-23','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00023','2021-03-25','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00014','2021-03-30','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00013','2021-04-01','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00012','2021-04-21','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00001','2021-04-27','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00011','2021-04-30','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00010','2021-05-04','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00003','2021-05-13','Alfa');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00019','2021-05-13','Alfa');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00025','2021-05-20','Sakit');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00005','2021-05-21','Sakit');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00018','2021-06-07','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00024','2021-06-25','Terlambat');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00003','2021-07-07','Alfa');
+INSERT INTO student_attendance(student_id,date,attendance_detail) VALUES ('00009','2021-07-14','Sakit');
 
 
 DROP TABLE IF EXISTS extracurricular_student;
@@ -3447,83 +3447,83 @@ DROP TABLE IF EXISTS extracurricular_attendance;
 CREATE TABLE extracurricular_attendance(
 student_id CHAR(5) NOT NULL
 ,date DATE NOT NULL
-,attandance_detail VARCHAR(9) NOT NULL
+,attendance_detail VARCHAR(9) NOT NULL
 ,PRIMARY KEY(date,student_id)
 ,FOREIGN KEY(student_id)
 REFERENCES student(student_id)
 );
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00022','2020-07-23','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00010','2020-07-31','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00020','2020-08-01','Sakit');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00020','2020-08-02','Sakit');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00003','2020-08-03','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00018','2020-08-03','Alfa');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00020','2020-08-03','Sakit');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00021','2020-08-05','Alfa');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00023','2020-08-07','Ijin');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00021','2020-08-10','Alfa');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00001','2020-08-24','Ijin');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00010','2020-08-25','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00015','2020-08-28','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00004','2020-09-25','Sakit');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00003','2020-09-25','Sakit');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00019','2020-09-30','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00018','2020-09-30','Ijin');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00010','2020-10-16','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00017','2020-10-27','Ijin');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00020','2020-10-29','Alfa');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00005','2020-10-30','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00001','2020-11-03','Ijin');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00022','2020-11-09','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00015','2020-11-11','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00011','2020-11-18','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00021','2020-11-18','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00010','2020-12-07','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00019','2020-12-10','ijin');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00015','2020-12-15','Sakit');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00002','2020-12-30','Alfa');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00015','2021-01-07','Sakit');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00022','2021-01-17','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00021','2021-01-30','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00017','2021-02-12','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00010','2021-02-15','Sakit');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00020','2021-02-24','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00022','2021-02-25','Ijin');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00023','2021-02-26','Alfa');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00016','2021-03-03','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00004','2021-03-06','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00018','2021-03-12','Alfa');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00009','2021-03-23','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00010','2021-03-23','Ijin');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00001','2021-03-24','Alfa');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00023','2021-03-25','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00014','2021-03-30','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00013','2021-04-01','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00005','2021-04-20','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00001','2021-04-21','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00023','2021-04-21','Sakit');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00012','2021-04-21','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00001','2021-04-27','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00011','2021-05-01','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00012','2021-05-03','Ijin');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00010','2021-05-04','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00023','2021-05-12','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00003','2021-05-13','Alfa');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00004','2021-05-13','Alfa');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00019','2021-05-13','Alfa');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00021','2021-05-18','Sakit');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00025','2021-05-20','Sakit');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00005','2021-05-21','Sakit');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00004','2021-05-21','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00011','2021-05-27','Ijin');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00024','2021-06-02','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00018','2021-06-05','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00019','2021-06-11','Sakit');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00016','2021-06-15','Alfa');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00006','2021-06-15','Sakit');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00024','2021-06-26','Terlambat');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00003','2021-07-07','Alfa');
-INSERT INTO extracurricular_attendance(student_id,date,attandance_detail) VALUES ('00009','2021-07-14','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00022','2020-07-23','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00010','2020-07-31','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00020','2020-08-01','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00020','2020-08-02','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00003','2020-08-03','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00018','2020-08-03','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00020','2020-08-03','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00021','2020-08-05','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00023','2020-08-07','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00021','2020-08-10','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00001','2020-08-24','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00010','2020-08-25','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00015','2020-08-28','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00004','2020-09-25','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00003','2020-09-25','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00019','2020-09-30','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00018','2020-09-30','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00010','2020-10-16','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00017','2020-10-27','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00020','2020-10-29','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00005','2020-10-30','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00001','2020-11-03','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00022','2020-11-09','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00015','2020-11-11','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00011','2020-11-18','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00021','2020-11-18','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00010','2020-12-07','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00019','2020-12-10','ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00015','2020-12-15','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00002','2020-12-30','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00015','2021-01-07','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00022','2021-01-17','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00021','2021-01-30','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00017','2021-02-12','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00010','2021-02-15','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00020','2021-02-24','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00022','2021-02-25','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00023','2021-02-26','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00016','2021-03-03','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00004','2021-03-06','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00018','2021-03-12','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00009','2021-03-23','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00010','2021-03-23','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00001','2021-03-24','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00023','2021-03-25','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00014','2021-03-30','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00013','2021-04-01','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00005','2021-04-20','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00001','2021-04-21','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00023','2021-04-21','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00012','2021-04-21','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00001','2021-04-27','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00011','2021-05-01','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00012','2021-05-03','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00010','2021-05-04','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00023','2021-05-12','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00003','2021-05-13','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00004','2021-05-13','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00019','2021-05-13','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00021','2021-05-18','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00025','2021-05-20','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00005','2021-05-21','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00004','2021-05-21','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00011','2021-05-27','Ijin');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00024','2021-06-02','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00018','2021-06-05','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00019','2021-06-11','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00016','2021-06-15','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00006','2021-06-15','Sakit');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00024','2021-06-26','Terlambat');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00003','2021-07-07','Alfa');
+INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES ('00009','2021-07-14','Sakit');
 
 DROP TABLE extracurricular_score;
 CREATE TABLE extracurricular_score(
