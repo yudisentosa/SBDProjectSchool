@@ -3527,12 +3527,11 @@ INSERT INTO extracurricular_attendance(student_id,date,attendance_detail) VALUES
 
 DROP TABLE extracurricular_score;
 CREATE TABLE extracurricular_score(
-student_id CHAR(5) NOT NULL
-,academic_year VARCHAR(9) NOT NULL
-,semester INTEGER NOT NULL
-,input_date DATE NOT NULL
-,extracurricular_score INTEGER NOT NULL
-, PRIMARY KEY(academic_year, semester,student_id)
+   student_id            CHAR(5) NOT NULL
+  ,semester              INTEGER  NOT NULL
+  ,input_date            DATE  NOT NULL
+  ,extracurricular_score INTEGER  NOT NULL
+  ,PRIMARY KEY(input_date,  semester, student_id)
 , FOREIGN KEY(student_id)
 REFERENCES student(student_id)
 );
