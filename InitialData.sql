@@ -1581,7 +1581,7 @@ INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,
 INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC054','FAC010','Baik','2020-12-01','-');
 INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC055','FAC011','Baik','2020-12-01','-');
 INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC056','FAC001','Baik','2021-01-01','-');
-INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC057','FAC002','Buruk','2021-01-01','terdapat bekas guntingan pada net gawang');
+INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC057','FAC002','Bermasalah','2021-01-01','terdapat bekas guntingan pada net gawang');
 INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC058','FAC003','Baik','2021-01-01','-');
 INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC059','FAC004','Baik','2021-01-01','-');
 INSERT INTO facility_conditions(f_report_id,facility_id,facility_condition,date,note) VALUES ('FREPC060','FAC005','Baik','2021-01-01','-');
